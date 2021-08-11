@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  
+</head>
+<body>
+    <main>
+      <div class="container">
+        <div class="title">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign-up for our 30-day trial. No credit card required. </p>
+        </div>
+        <div class="card">
+          <div class="pricing">
+            <div class="pageviews-wrap">
+              <p><span class='pageviews'>100k</span> Pageviews</p>
+            </div>
+            <div class="price-wrap">
+                <span class='bold lead'>$<span class='price'>16.00</span></span><p> / month</p>
+            </div>
+            <div class="slider">
+              <input type="range" min='0' max='4' steps='1' value='2' class='price-slider'>
+            </div>
+            <div class="billing">
+              <p>Monthly Billing</p>
+              <label class='switch'>
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <p>Yearly Billing</p>
+              <div class="discount">
+                25% discount
+              </div>
+              <div class="discount media-query">
+                -25%
+              </div>
+            </div>
+          </div>
+          <div class="features">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+            <button class="btn" type='submit'>Start my trial</button>
+          </div>
+        </div>
+      </div>
+        
+    </main>
+    <script src='js/app.js'></script>
+</body>
+</html>
